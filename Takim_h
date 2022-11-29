@@ -1,0 +1,23 @@
+
+#ifndef TAKIM_H
+#define TAKIM_H
+
+#include <string>
+using std::string;
+
+class Takim
+{
+    protected:
+        string isim;
+        int galibiyet;
+        int maglubiyet;
+
+    public:
+        Takim(string isim,int galibiyet, int maglubiyet);
+        string getIsim();
+        int getGalibiyet();
+        int getMaglubiyet();
+
+};
+#endif // TAKIM_H
+
