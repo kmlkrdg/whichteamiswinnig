@@ -1,0 +1,32 @@
+
+#ifndef FUTBOL_H
+#define FUTBOL_H
+
+#include "Takim.h"
+#include <string>
+using std::string;
+
+class Futbol : public Takim
+
+{
+
+    private:
+        int beraberlik;
+        int atilan_gol;
+        int yenilen_gol;
+    public:
+        Futbol(int beraberlik,string isim,int galibiyet, int maglubiyet);
+        void setTakimlar(int beraberlik, int galibiyet, int maglubiyet, int atilan_gol, int yenilen_gol);
+        int getBeraberlik();
+        int getAtilan_gol();
+        int getYenilen_gol();
+        int toplam_mac();
+        int puan();
+        int averaj();
+        bool operator>(Futbol & f);
+
+
+
+};
+
+#endif // FUTBOL_H
